@@ -4,7 +4,9 @@
   "description": "Boilerplate for react app",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "postinstall": "webpack -p",
+    "start": "node server.js",
     "build": "webpack --mode production"
   },
   "author": "Sarita khanal",
